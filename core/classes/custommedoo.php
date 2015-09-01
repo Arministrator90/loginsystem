@@ -6,7 +6,7 @@ class CustomMedoo{
 	
 	public function __construct($database) {
 	    $this->db = $database;
-	}	
+	}
 	
 	
 	public function getFields($fields, $where = NULL)
@@ -22,7 +22,7 @@ class CustomMedoo{
 		
 	}
 	
-	public function updatetFields($fields, $where = NULL){
+	public function updateFields($fields, $where = NULL){
 		
 		return $this->db->update($this->tableName, $fields, $where);
 		
